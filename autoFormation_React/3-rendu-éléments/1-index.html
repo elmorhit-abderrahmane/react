@@ -7,24 +7,17 @@
 
     <script crossorigin src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
     <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
+
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
    </head>
   <body>
       
     <div id="app"></div>
-
     <script type="text/babel">
+  
+  const element = <h1>Bonjour, monde</h1>;
+ReactDOM.render(element, document.getElementById('app'));
 
-class Welcome extends React.Component {
-  render() {
-    return <h1>Hello Abderrahmane !!!! {this.props.name}</h1>;
-  }
-}
-
-
-
-
-      ReactDOM.render(<Welcome />, document.getElementById('app'));
 
     </script>
   </body>
