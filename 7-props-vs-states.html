@@ -13,25 +13,28 @@
   <body>
     <div id="app"></div>
     <script type="text/babel">
-props : {
-  title:"hello React"
-  name : "abde el-morhit"
-}
+
 // app component 
 class App  extends React.Component{
+    state = {
+        nameJS: " hello khalid.com  "
+        
+    }
 render(){
     return (
         <div>
-           <Child />
+            hello react  
+            <Child  name ="helloo abderrahmane" />
+           <p>   this component is React {this.state.nameJS} </p>
         </div>
     )
 }
 }
 class Child extends React.Component {
-    reander (){
+    render (){
         return (
         <div> 
-            <p> child component </p>
+           <h1> child component  { this.props.name} </h1>
             </div>
         )
     }
