@@ -40,15 +40,15 @@ function Func2(props) {
 }
 function Comment(props) {
   return (
-    <div className="Comment">
+    <h2 className="Comment">
       <Func2 user={props.author} />
-      <div className="Comment-text">{props.text}</div>
-      <div className="Comment-né">{props.né}</div>
-      <div className="Comment-text2">{props.text2}</div>
-      <div className="Comment-date">
+      <h2 className="Comment-text">{props.text}</h2>
+      <h2 className="Comment-né">{props.né}</h2>
+      <h2 className="Comment-text2">{props.text2}</h2>
+      <h2 className="Comment-date">
         {func0(props.date)}
-      </div>
-    </div>
+      </h2>
+    </h2>
   );
 }
 const comment = {
@@ -58,7 +58,7 @@ const comment = {
   né :'26/06/2001',
   author: {
     name: 'Hello elmorhit',
-    email : 'elmorit.abderrahmane.dev@gmail.com',
+    // email : 'elmorit.abderrahmane.dev@gmail.com',
     avatarUrl: 'https://st2.depositphotos.com/6498856/9557/v/600/depositphotos_95576242-stock-illustration-gold-happy-birthday.jpg'
     },
 };
